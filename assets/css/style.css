@@ -100,7 +100,7 @@ body {
   color: #00ff9f;
 }
 
-body, input, select, textarea {
+body, input, select, textarea, i {
   color: #4D4D4D;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-size: 1rem;
@@ -154,6 +154,10 @@ h1 {
   color: #00ff9f;
 }
 
+h1:hover, h3:hover {
+  color: #93ffe7;
+}
+
 h2 {
   font-size: 1.25rem;
   margin: 0 0 2rem 0;
@@ -166,7 +170,7 @@ h3 {
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1;
-  margin: 0 0.5rem 3rem 0.5rem;
+  margin: 0 0.5rem 3rem 3.5rem;
   text-transform: uppercase;
   color: #00ff9f;
 }
@@ -179,7 +183,9 @@ h4 {
 h5 {
   font-size: 1.5rem;
   font-weight: 200;
+  margin: 0;
 }
+
 
 h6 {
   font-size: 0.625rem;
@@ -406,7 +412,7 @@ h6 {
 
 /* Form */
 form {
-  margin: 0 0 2rem 0;
+  margin: 0 5rem 6rem 0;
 }
 
 form > :last-child {
@@ -863,11 +869,10 @@ input[type="radio"] + label:before {
 
 ul li {
   display: inline;
+  margin-right: 1rem;
 }
 
-
 /* LAYOUT */
-/* Wrapper */
 
 #intro {
   margin: 9rem 0 11rem 0;
@@ -879,6 +884,12 @@ ul li {
 
 #intro > .content > h3, #intro > .content > ul, #about > .content {
   padding-left: 0.5rem;
+}
+
+
+
+#intro > h4 {
+  margin: 0;
 }
 
 #about img {
@@ -909,6 +920,7 @@ ul li {
   grid-area: content;
   max-width: 60rem;
   position: relative;
+  margin-right: 2rem;
 }
 
 #wrapper > section {
@@ -1007,7 +1019,7 @@ ul li {
 
 #wrapper > section > header:before {
   height: calc(100% + 10rem);
-  left: calc(50vw - 5rem);
+  left: calc(30vw - 5rem);
 }
 
 #wrapper > section > header h1:before, #wrapper > section > header h2:before {
@@ -1032,7 +1044,7 @@ ul li {
 }
 
 #wrapper > section.intro > header:before {
-  margin-left: calc(50vw - 10rem);
+  margin-left: calc(30vw - 10rem);
 }
 
 @media screen and (max-width: 1152px) {
@@ -1046,7 +1058,7 @@ ul li {
 }
 
 #wrapper > section:last-of-type > header:after {
-  left: calc(50vw - 5rem - 0.25rem + 1px);
+  left: calc(30vw - 5rem - 0.25rem + 1px);
 }
 
 #wrapper .copyright {
@@ -1073,7 +1085,7 @@ ul li {
 
   #wrapper > section > header:before {
     height: calc(100% + 8rem);
-    left: calc(50vw - 4rem);
+    left: calc(30vw - 4rem);
   }
 
   #wrapper > section > header h1:before, #wrapper > section > header h2:before {
@@ -1098,7 +1110,7 @@ ul li {
   }
 
   #wrapper > section.intro > header:before {
-    margin-left: calc(50vw - 8rem);
+    margin-left: calc(30vw - 8rem);
   }
 }
 
