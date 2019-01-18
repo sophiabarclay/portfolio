@@ -1126,7 +1126,7 @@ ul li {
 
 @media screen and (max-width: 1280px) {
   #wrapper > section:last-of-type > header:after {
-    left: calc(50vw - 4rem - 0.25rem + 1px);
+    left: calc(30vw - 4rem - 0.25rem + 1px);
   }
 
   #wrapper .copyright {
