@@ -898,7 +898,7 @@ ul li {
 /* LAYOUT */
 
 .flex-icons {
-  width: 100%
+  /* width: 100% */
   display: flex;
   /* flex-flow: column; */
   align-content: space-around;
@@ -906,8 +906,24 @@ ul li {
   flex-wrap: wrap;
 }
 
-.flex-icons {
+/* .flex-icons {
   margin-top: 1rem;
+} */
+
+.flex-icons > span {
+  text-align: center;
+  width: 7rem;
+  margin: 1rem;
+}
+
+.tech-icon {
+  display: block;
+  margin: 0 auto;
+}
+
+.icon {
+  height: 2rem;
+  margin-bottom: -1rem;
 }
 
 .stretch {
@@ -925,8 +941,6 @@ ul li {
 #intro > .content > h3, #intro > .content > ul, #about > .content {
   padding-left: 0.5rem;
 }
-
-
 
 #intro > h4 {
   margin: 0;
@@ -1112,11 +1126,15 @@ ul li {
 @media screen and (max-width: 1280px) {
 
   #about img {
-    height: 10rem;
+    height: 15rem;
     border-radius: 50%;
     margin-right: 0rem;
   }
 
+  .tech-icon {
+    height: 2rem;
+    margin-bottom: -1rem;
+  }
 
   #wrapper, #about {
     padding: 0 0 4rem 0;
@@ -1163,6 +1181,11 @@ ul li {
 
   #wrapper > section.intro > header:before {
     margin-left: calc(30vw - 8rem);
+  }
+
+  img .tech-icon {
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -1479,13 +1502,6 @@ body.is-ie #wrapper section > header {
 body.is-ie #wrapper section > .content {
   width: 50%;
 }
-
-/* body.is-ie #wrapper section > footer {
-  width: 50%;
-  text-align: left;
-  margin-left: 50%;
-  padding: 5rem;
-} */
 
 body.is-ie #wrapper > section > .content > section {
   width: 100vw;
