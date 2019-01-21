@@ -120,7 +120,7 @@ a {
 }
 
 a:hover {
-  border-bottom: dotted 1px;
+  color: #93ffe7;
 }
 
 strong, b {
@@ -244,7 +244,7 @@ i {
 }
 
 /* Tabs */
-.tab {
+/* .tab {
   height: 80px;
   width: 70px;
   background-color: tomato;
@@ -259,7 +259,7 @@ i {
 	border-right: 35px solid transparent;
 	border-top: 20px solid tomato;
   position: fixed;
-}
+} */
 
 /* Button */
 	input[type="submit"],
@@ -928,6 +928,22 @@ ul li {
 
 .stretch {
   margin: 4rem;
+}
+.stretch {
+  margin: 8rem 4rem 4rem 2rem;
+  text-align: center;
+}
+
+.fa-github, .fa-linkedin {
+  font-size: 1.8rem;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.stretch i {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
 }
 
 #intro {
